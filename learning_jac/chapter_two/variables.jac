@@ -32,3 +32,24 @@ with entry{
     print(f"Everyone should pay {amount_per_person}");
     
 }
+
+#Global variables
+glob school_name: str = "Calijen Academy";
+glob passing_grade: int = 75;
+glob genius_rank: int = 99;
+
+
+with entry{
+    print(f"Welcome to {school_name}");
+    print(f"You have to score above {genius_rank} to take the genius rank classes.");
+}
+
+# type any
+with entry{
+    #this variable can hold any type of value
+    grade: any  = 95;
+    print(f"The best student scored {grade}");
+
+    grade = "A";
+    print(f"This was a clean {grade}");
+}
