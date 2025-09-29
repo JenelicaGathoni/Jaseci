@@ -8,7 +8,7 @@ edge country_relation{
 
 }
 
-#Lets creatcounrys
+#Lets create countries
 with entry{
     country1 = root ++> country(name = "kenya", wealth = 45);
     country2 = root ++> country(name = "ethiopia", wealth = 30);
