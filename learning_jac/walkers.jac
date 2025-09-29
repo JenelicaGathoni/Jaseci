@@ -1,5 +1,10 @@
 #Walkers are like little workers that you can program
 #to travel through your graph of nodes and edges to perform tasks
+
+'''
+This is not yet done
+I am yet to utilise the relations created
+'''
 node country{
     has name: str;
     has infected: bool = False;
@@ -19,7 +24,7 @@ walker greet_friends{
             here.visited = True;
             if not here.isHost{
                 here.infected = True;
-                print("Now you're infected!");
+
             }else {
                 print("I am the host! YOu cannot infect me!");
             }
