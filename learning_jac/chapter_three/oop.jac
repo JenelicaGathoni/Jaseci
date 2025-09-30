@@ -9,6 +9,6 @@ obj character{
     }
 }
 with entry{
-    question_one = character =  character(name = "Hari Seldon", age = 2000, followers = 1000000, mortality = False);
+    question_one =  character(name = "Hari Seldon", age = 2000, followers = 1000000, mortality = False);
     print(question_one.verify_info());
 }
