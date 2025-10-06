@@ -13,6 +13,10 @@ obj cleon{
             self.role = "Main learner";
         }elif self.name == "dusk"{
             self.role = "Main Adviser";
+        }else{
+            
+           return f"The character {self.name} is not a member of the imperial dynasty!";
+          
         }
     return f"The character {self.name} is now {self.role}";
     }
@@ -20,6 +24,10 @@ obj cleon{
 with entry{
     emperor_day = cleon(name = "day", role = "trainee");
     status_message = emperor_day.role_assigner();   
+    print(status_message);
+
+    emperor_donno = cleon(name = "aurelia", role = "trainee");
+    status_message = emperor_donno.role_assigner();
     print(status_message);
 }
 
