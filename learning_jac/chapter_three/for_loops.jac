@@ -1,6 +1,9 @@
 # I want to create a dictionary of technologies made in the movie Foundation
 # Then I want to loop over the dictionary and find out how many each ruler created
 
+# We use for loops when You know how many times you want the loop to run, 
+# or you’re looping over a sequence (like a list, string, range, or dictionary).
+
  
 def technology_owners(technologies: dict[str, dict[str,str]]) -> str{
     inventor_list: dict[str, int] = {};
@@ -21,7 +24,15 @@ def technology_owners(technologies: dict[str, dict[str,str]]) -> str{
    
   print(inventor_list);
 }
-
+"""
+Write a function filter_by_purpose(technologies: dict, purpose_keyword: str) 
+that takes the technologies dictionary and returns a list of technology names whose purpose string contains the purpose_keyword (case-insensitive).
+"""
+def filter_by_purpose(technologies: dict, purpose_keyword: str){
+    for purpose in technologies{
+        
+    }
+}
 
 with entry{
     technologies: dict[str,dict[str,str]] = {
