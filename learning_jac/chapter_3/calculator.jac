@@ -13,8 +13,8 @@ def divide (a:float, b: float) ->float{
 with entry{
     print("=== simple calculator ===");
 
-    num1: float =8;
-    num2: float = 5;
+    num1: float = 8.0;
+    num2: float = 5.0;
     print(f"{num1 + num2} == {add(num1,num2)}");
     print(f"{num1 - num2} == {subtract(num1,num2)}");
     print(f"{num1 * num2} == {multiply(num1,num2)}");
