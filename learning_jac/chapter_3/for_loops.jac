@@ -26,10 +26,18 @@ def technology_owners(technologies: dict[str, dict[str,str]]) -> str{
 }
 """
 Write a function filter_by_purpose(technologies: dict, purpose_keyword: str) 
-that takes the technologies dictionary and returns a list of technology names whose purpose string contains the purpose_keyword (case-insensitive).
+that takes the technologies dictionary and returns a list of technology names 
+whose purpose string contains the purpose_keyword (case-insensitive).
 """
 def filter_by_purpose(technologies: dict, purpose_keyword: str){
-    for purpose in technologies{
+    for (technology,purpose) in technologies.items(){
+        purpose: str = purpose["purpose"];
+
+        if purpose in technologies == purpose_keyword{
+            return technologies.keys[];
+        }
+
+
         
     }
 }
@@ -46,6 +54,7 @@ with entry{
 
     };
      technology_owners(technologies);
+     filter_by_purpose(technologies, "faster than light travel");
    
    
    

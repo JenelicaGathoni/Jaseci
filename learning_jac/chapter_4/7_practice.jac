@@ -31,6 +31,25 @@ def process_numbers(integer_list: list[int]) -> list[int]{
     return numbers_below_100;
     }
 }
+#*
+Write a function called count_high_scores that takes two integer inputs:
+A list of integers (scores).
+An integer threshold.
+The function should iterate through the list and return the total count of scores that are strictly greater than the provided threshold.
+For example: count_high_scores([80, 95, 70, 60], 75) should return 2 (since 80 and 95 are > 75).
+*#
+
+def count_high_scores(scores_list: list[int], threshold: int) ->int {
+    count: int= 0;
+    for score in scores_list{
+        if score > threshold{
+            count +=1;
+        }
+       
+    }
+     return count;
+
+}
 
 with entry{
     grades: list[int] = [35,45,67,56,89];
@@ -38,6 +57,9 @@ with entry{
 
     integer_list: list[int] = [1,2,45,8,65, 12,78,90];
     print(process_numbers(integer_list));
+
+    scores_list: list[int] = [34,45,67,89];
+    print(count_high_scores(scores_list, 40));
 }
 
 
