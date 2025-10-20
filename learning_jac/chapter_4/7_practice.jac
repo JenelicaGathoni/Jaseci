@@ -50,7 +50,14 @@ def count_high_scores(scores_list: list[int], threshold: int) ->int {
      return count;
 
 }
-
+#*
+Write a function called validate_data that takes a list of numbers. 
+The function should check the list for two conditions:
+Is the list empty?
+Does the list contain any negative numbers?
+The function should return True only if the list is not empty AND does not contain any negative numbers. Otherwise, it should return False.
+*#
+def
 with entry{
     grades: list[int] = [35,45,67,56,89];
     print(f'The class had an average grade of {calculate_average(grades)}');
