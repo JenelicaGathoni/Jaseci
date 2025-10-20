@@ -57,7 +57,31 @@ Is the list empty?
 Does the list contain any negative numbers?
 The function should return True only if the list is not empty AND does not contain any negative numbers. Otherwise, it should return False.
 *#
-def
+def validate_data(number_list:list[int]) ->bool{
+    if not number_list{
+        return False;
+    }
+    for number in number_list{
+        if  number<0{
+        return False;
+   }
+    }
+return True;
+}
+
+#*
+You have a list of names: ['alice', 'bob', 'charlie']. 
+You want to capitalize the first letter of each name.
+Write a function capitalize_names that takes the list and returns a new list with the capitalized names, leaving the original list unchanged
+*#
+def capitalize_names(names_list: list[str]) -> list[str]{
+    capitalized_names = [];
+    for name in names_list{
+       new_name: str=  name.capitalize();
+        capitalized_names.append(new_name);
+    }
+    return capitalized_names;
+}
 with entry{
     grades: list[int] = [35,45,67,56,89];
     print(f'The class had an average grade of {calculate_average(grades)}');
@@ -67,6 +91,12 @@ with entry{
 
     scores_list: list[int] = [34,45,67,89];
     print(count_high_scores(scores_list, 40));
+
+    number_list: list[int] = [45,45];
+    print(validate_data(number_list));
+
+    names_list: list[str] = ['alice', 'bob', 'charlie'];
+    print(capitalize_names(names_list));
 }
 
 
